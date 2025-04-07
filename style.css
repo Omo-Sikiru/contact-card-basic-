@@ -67,3 +67,7 @@ height: 100%;
 scroll-behavior: smooth; 
 }
 
+.ff-pry{
+    font-family: var(--ff-main);
+}
+
