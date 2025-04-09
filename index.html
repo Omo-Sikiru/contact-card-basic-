@@ -27,18 +27,18 @@
         <h1 class="mg-btm-1">Contact Us</h1>
 
         <div class="name-container mg-btm-1">
-          <div class="first-name-container">
+          <div class="input-container">
             <label for="first-name">First Name</label>
             <input type="text" id="first-name" name="first-name" required />
           </div>
 
-          <div class="last-name-container">
+          <div class="input-container">
             <label for="query">Last Name</label>
             <input type="text" id="last-name" name="last-name" />
           </div>
         </div>
 
-        <div class="email-container mg-btm-1">
+        <div class="input-container mg-btm-1">
           <label for="email"> Email Address</label>
           <input type="text" id="email" name="email" />
         </div>
@@ -46,16 +46,41 @@
         <div class="query-container mg-btm-1">
           <p>Query Type</p>
 
-          <label>
-            <input type="radio" name="query" value="General Enquiry" />
-            General Enquiry
-          </label>
-
-          <label>
-            <input type="radio" name="query" value="Support Request" />
-            Support Request
-          </label>
+          <div class="name-container">
+            <div class="query-input">
+              <input
+                type="radio"
+                id="query-ge"
+                name="query-options"
+                value="General Enquiry"
+                class="query-icon"
+              />
+              <label for="query-ge">General Enquiry</label>
+            </div>
+            <div class="query-input">
+              <input
+                type="radio"
+                id="query-sr"
+                name="query-options"
+                value="Support Request"
+                class="query-icon"
+              />
+              <label for="query-sr">Support Request</label>
+            </div>
+          </div>
         </div>
+
+        <div class="input-container mg-btm-1">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="10" column="5"></textarea>
+        </div>
+
+        <div class="check-input mg-btm-1">
+          <input type="checkbox" id="agree" name="agree" class="check-icon" />
+          <label for="agree">I consent to being contacted by the team</label>
+        </div>
+
+        <button class="form-btn">Submit</button>
       </form>
     </main>
 
