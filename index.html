@@ -50,22 +50,37 @@
             <div class="query-input">
               <input
                 type="radio"
-                id="query-ge"
+                id="general-enquiry"
                 name="query-options"
                 value="General Enquiry"
-                class="query-icon"
+                required
               />
-              <label for="query-ge">General Enquiry</label>
+              <label for="general-enquiry" class="custom-radio">
+                <img
+                  src="./assets/images/icon-radio-selected.svg"
+                  class="radio-icon checked"
+                  alt="Checked radio button"
+                />
+                General Enquiry
+              </label>
             </div>
+
             <div class="query-input">
               <input
                 type="radio"
-                id="query-sr"
+                id="support-request"
                 name="query-options"
                 value="Support Request"
-                class="query-icon"
+                required
               />
-              <label for="query-sr">Support Request</label>
+              <label for="support-request" class="custom-radio">
+                <img
+                  src="./assets/images/icon-radio-selected.svg"
+                  class="radio-icon checked"
+                  alt="Checked radio button"
+                />
+                Support Request
+              </label>
             </div>
           </div>
         </div>
@@ -76,8 +91,15 @@
         </div>
 
         <div class="check-input mg-btm-1">
-          <input type="checkbox" id="agree" name="agree" class="check-icon" />
-          <label for="agree">I consent to being contacted by the team</label>
+          <input type="checkbox" id="agree" name="agree" required />
+          <label for="agree" class="custom-check">
+            <img
+              src="./assets/images/icon-checkbox-check.svg"
+              class="check-icon checked"
+              alt="Checked checkbox button"
+            />
+            I consent to being contacted by the team</label
+          >
         </div>
 
         <button class="form-btn">Submit</button>
