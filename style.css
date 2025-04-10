@@ -57,6 +57,12 @@ select {
   font: inherit;
 }
 
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
     scroll-behavior: auto;
@@ -82,6 +88,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Base styles for mobile first */
 body {
   height: 100vh;
   background: var(--clr-pry-01);
@@ -96,7 +103,7 @@ body {
   width: 90%;
   margin-inline: auto;
   margin-block: 2rem;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 10px;
 }
 
@@ -109,7 +116,7 @@ body {
 input,
 .query-input,
 textarea {
-  /* width: 100%; */
+  width: 100%;
   border: 1px solid var(--clr-neu-05);
   border-radius: 5px;
   padding: 0.5rem 0.5rem;
@@ -137,18 +144,6 @@ textarea {
   display: flex;
   gap: 0.5rem;
   align-items: center;
-}
-
-.form-btn {
-  background: var(--clr-pry-06);
-  color: var(--clr-neu-01);
-  font-size: 1.2rem;
-  font-weight: 700;
-  width: 100%;
-  padding: 1rem;
-  outline: none;
-  border: none;
-  border-radius: 5px;
 }
 
 input[type="radio"],
@@ -186,4 +181,55 @@ input[type="checkbox"]:checked + .custom-check .check-icon.checked {
 input[type="radio"]:checked,
 input[type="checkbox"]:checked {
   display: none;
+}
+
+.form-btn {
+  background: var(--clr-pry-06);
+  color: var(--clr-neu-01);
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 100%;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+/* MEDIA QUERIES  */
+
+/* Tablet */
+@media (min-width: 600px) {
+  body {
+    font-size: 1.125rem;
+  }
+
+  .form-container {
+    width: 500px;
+  }
+
+  .name-container {
+    flex-direction: row;
+  }
+}
+
+/* Small desktop */
+@media (min-width: 768px) {
+  body {
+    font-size: 1.25rem;
+  }
+
+  /* .form-container {
+    max-width: 500px;
+  } */
+}
+
+/* Large desktop */
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.375rem;
+  }
+
+  .form-container {
+    width: 700px;
+  }
 }
