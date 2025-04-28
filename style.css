@@ -195,23 +195,6 @@ input[type="checkbox"]:checked {
   border-radius: 5px;
 }
 
-.little-star {
-  position: relative;
-}
-
-.little-star::after {
-  content: "*";
-  position: absolute;
-  top: -0.3rem;
-  right: 8rem;
-  font-size: 1.5rem;
-  color: var(--clr-acc-01);
-}
-
-.query-input:focus {
-  background: var(--clr-pry-06);
-}
-
 /* MEDIA QUERIES  */
 
 /* Tablet */
